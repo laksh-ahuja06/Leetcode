@@ -7,7 +7,6 @@ public:
             for (int j = i; j < size; j++) {
                 if ((j-i) % 2 == 0) {
                     for (int k = i; k <= j; k++) {
-                        cout << arr[k] << " ";
                         answer += arr[k];
                     }
                 }
