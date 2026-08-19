@@ -12,7 +12,7 @@ public:
         }
 
         for (string i : ans) {
-            cout << i << endl;
+            std::cout << i << endl;
         }
 
         std::string finalResult;
