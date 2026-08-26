@@ -12,11 +12,11 @@ public:
 
         for (auto [key,value] : mp) {
             cout << key <<": " << value << endl;
-            if (mp.size () == 1) {
-                return value;
-            }
+            // if (mp.size () == 1) {
+            //     return value;
+            // }
 
-            else if (value%2 == 0) {
+            if (value%2 == 0) {
                 answer+=value;
             }
             else if (value%2 != 0) {
