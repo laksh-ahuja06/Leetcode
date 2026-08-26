@@ -11,7 +11,7 @@ public:
         }
 
         int mainSize = um.size ();
-
         return min (mainSize, size);
+        
     }
 };
