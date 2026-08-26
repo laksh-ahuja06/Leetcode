@@ -5,7 +5,7 @@ public:
         string copy1 = s;
         string copy2 = s;
 
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < length/2; i++) {
             if (s[i] == s[length-i-1]) {
                 continue;
             }
@@ -18,16 +18,16 @@ public:
 
         int count = 0;
 
-        for (int i = 0; i < copy1.length(); i++) {
+        for (int i = 0; i < copy1.length()/2; i++) {
             if (copy1[i] == copy1[copy1.length()-i-1]) {
                 count++;
                 continue;
             }
         }
 
-        if (count == copy1.length()) return true;
+        if (count == copy1.length()/2) return true;
 
-        for (int i = 0; i < copy2.length(); i++) {
+        for (int i = 0; i < copy2.length()/2; i++) {
             if (copy2[i] == copy2[copy2.length()-i-1]) {
                 continue;
             }
