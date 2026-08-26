@@ -25,8 +25,6 @@ public:
             }
         }
 
-        cout << count << " " << copy1.length() << endl;
-
         if (count == copy1.length()) return true;
 
         for (int i = 0; i < copy2.length(); i++) {
