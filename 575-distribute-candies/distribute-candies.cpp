@@ -1,6 +1,7 @@
 class Solution {
 public:
     int distributeCandies(vector<int>& candyType) {
+
         int size = candyType.size () / 2;
 
         unordered_set<int> um;
@@ -11,7 +12,6 @@ public:
 
         int mainSize = um.size ();
 
-        if (size > mainSize) return mainSize;
-        return size;
+        return min (mainSize, size);
     }
 };
