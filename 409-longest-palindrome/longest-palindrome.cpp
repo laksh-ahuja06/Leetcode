@@ -11,11 +11,6 @@ public:
         int count = 0;
 
         for (auto [key,value] : mp) {
-            cout << key <<": " << value << endl;
-            // if (mp.size () == 1) {
-            //     return value;
-            // }
-
             if (value%2 == 0) {
                 answer+=value;
             }
