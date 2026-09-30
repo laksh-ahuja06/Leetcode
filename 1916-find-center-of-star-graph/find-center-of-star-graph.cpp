@@ -2,7 +2,6 @@ class Solution {
 public:
     int findCenter(vector<vector<int>>& edges) {
         unordered_map<int, int> indegree;
-        // unoredered_map<int, int> outdegree;
         for (int i = 0; i < edges.size (); i++) {
             int a = edges[i][0];
             int b = edges[i][1];
