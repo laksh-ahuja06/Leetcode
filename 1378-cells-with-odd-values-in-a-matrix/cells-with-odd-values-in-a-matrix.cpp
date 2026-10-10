@@ -19,10 +19,8 @@ public:
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                cout << answer[i][j] << " ";
                 if (answer[i][j] % 2 != 0) count++;
-            }
-            cout << endl;
+            }  
         }
 
         return count;
