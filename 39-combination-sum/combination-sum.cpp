@@ -4,7 +4,7 @@ public:
     vector<vector<int>> answer;
 
     void backtrack (int start, vector<int> currentCombination,
-                    vector<int> candidates, int sum, int target) {
+                    vector<int>& candidates, int sum, int target) {
         if (sum == target) answer.push_back (currentCombination); 
         if (sum > target) return;
         for (int i = start; i < candidates.size (); i++) {
