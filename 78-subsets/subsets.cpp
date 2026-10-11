@@ -5,7 +5,7 @@ public:
     vector<int> element;
 
     void backtrack (int start, vector<int>& nums) {
-        if (element.size () > nums.size ()) return;
+        // if (element.size () > nums.size ()) return;
         answer.push_back (element);
         for (int i = start; i < nums.size (); i++) {
             // if (i > start && nums[i] == nums[i - 1]) continue;
