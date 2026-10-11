@@ -17,6 +17,7 @@ public:
     }
 
     vector<vector<int>> subsets(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
         backtrack (0, nums);
         return answer;
     }
