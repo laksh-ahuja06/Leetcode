@@ -8,7 +8,7 @@ public:
         if (element.size () > nums.size ()) return;
         answer.push_back (element);
         for (int i = start; i < nums.size (); i++) {
-            if (i > start && nums[i] == nums[i - 1]) continue;
+            // if (i > start && nums[i] == nums[i - 1]) continue;
             int candidate = nums[i];
             element.push_back (candidate);
             backtrack (i+1, nums);
