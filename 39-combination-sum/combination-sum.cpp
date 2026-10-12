@@ -5,7 +5,10 @@ public:
 
     void backtrack (int start, vector<int> currentCombination,
                     vector<int>& candidates, int sum, int target) {
-        if (sum == target) answer.push_back (currentCombination); 
+        if (sum == target) {
+            answer.push_back (currentCombination); 
+            return;
+        }
         if (sum > target) return;
         for (int i = start; i < candidates.size (); i++) {
             int currentCandidate = candidates[i];
